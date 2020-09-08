@@ -6,7 +6,7 @@ class DemographicAnalyzerTestCase(unittest.TestCase):
         self.data = demographic_data_analyzer.calculate_demographic_data(print_data = False)
 
     def test_race_count(self):
-        actual = self.data['race_count'].tolist()
+        actual = list(self.data['race_count'])
         expected = [27816, 3124, 1039, 311, 271]
         self.assertAlmostEqual(actual, expected, "Expected race count values to be [27816, 3124, 1039, 311, 271]")
     

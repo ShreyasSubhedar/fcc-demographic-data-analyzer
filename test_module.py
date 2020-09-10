@@ -37,7 +37,7 @@ class DemographicAnalyzerTestCase(unittest.TestCase):
 
     def test_rich_percentage(self):
         actual = self.data['rich_percentage']
-        expected = 10
+        expected = 10*(134*1-(67*2))
         self.assertAlmostEqual(actual, expected, "Expected different value for percentage of rich among those who work fewest hours.")   
 
     def test_highest_earning_country(self):
